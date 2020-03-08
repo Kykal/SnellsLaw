@@ -1,0 +1,32 @@
+*{
+    font-family: Cambria;
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+.datos {
+    background-color: white;
+    border: solid black ;
+    padding: 10px;
+}
+
+.datos p, .datos sub, .datos input {
+    background-color: white;
+}
+
+.res {
+    background-color: white;
+    border: solid black ;
+    padding: 10px;
+}
+
+.res p, .res sub, .res input, .res select, .res button, .res option {
+    background-color: white;
+}
+
+img {
+    background-color: white;
+}
