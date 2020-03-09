@@ -91,11 +91,16 @@ function calc(){
     var n2 = parseFloat(document.getElementById('n2').value);
     var tR = parseFloat(document.getElementById('tR').value);
 
-    if(document.getElementById('values').selectedIndex == 1){
+    if(document.getElementById('values').selectedIndex == 1){           //n1
 
-        
+        var DegR = tR*(Math.PI/180);
+        var DegI = tI*(Math.PI/180); 
 
-    } else if(document.getElementById('values').selectedIndex == 2){
+        var n1r = (n2*Math.sin(DegR))/Math.sin(DegI);
+
+        document.getElementById('n1r').value = n1r;
+
+    } else if(document.getElementById('values').selectedIndex == 2){    //tI
 
         var DEG1 = ( tR*( Math.PI/180 ) );   //ti RADIAN -> ti DEGREES
         var DEG2 = ( n2*(Math.sin(DEG1)/n1));
@@ -103,11 +108,16 @@ function calc(){
 
         document.getElementById('tIr').value = tIr;
 
-    } else if(document.getElementById('values').selectedIndex == 3){
+    } else if(document.getElementById('values').selectedIndex == 3){    //n2
 
-        
+        var DegR = tR*(Math.PI/180);
+        var DegI = tI*(Math.PI/180); 
 
-    } else if(document.getElementById('values').selectedIndex == 4){
+        var n2r = (n1*Math.sin(DegI))/Math.sin(DegR);
+
+        document.getElementById('n2r').value = n2r;
+
+    } else if(document.getElementById('values').selectedIndex == 4){    //tR
         
         var DEG1 = ( tI*( Math.PI/180 ) );   //ti RADIAN -> ti DEGREES
         var DEG2 = ( n1*(Math.sin(DEG1)/n2));
