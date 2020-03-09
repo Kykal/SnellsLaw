@@ -1,19 +1,23 @@
-body{
-    font-family: Arial;
-    background-color: rgb(218,219, 211);
-}
-
-h1 {
+header{
     font-family: Cambria;
     text-align: center;
 }
 
-.datos{
-    background-color: white;
-    border: solid black;
+body{
+    background-color: rgb(218,219, 211);
 }
 
-.datos p {
+.body2{
     background-color: white;
+    border: solid black;
     padding: 10px;
 }
+
+.body2 > .reg {
+    font-family: Arial;
+}
+
+.body2 > .reg > .data, .body2 > .reg > .result{
+    font-family: Cambria;
+}
+

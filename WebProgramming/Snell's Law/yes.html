@@ -2,31 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="Encoded and embedded by" content="Alan Xaver Benavides Benavides">
+    <meta name="University" content="Universidad Autónoma de Nuevo León">
+    <meta name="School" content="Facultad de Ingeniería Mecánica y Eléctrica">
+    <meta name="Location" content="San Nicolás de Los Garza, Nuevo León, México, Planet 'Earth', Solar System, Solar Interstellar Neighborhood, Milky Way Galaxy, Local Galactic Group, Virgo Supercluster, Local Supercluster">
     <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>FÍSICA IV - PRÁCTICA 3</title>
+    <title>SNELL'S LAW</title>
 </head>
 <body>
-    <h1>
-        <p>SNELL'S LAW</p>
-        <p> n<sub>1</sub>·Sen(&Theta;<sub>I</sub>) = n<sub>2</sub>·Sen(&Theta;<sub>R</sub>)</p>
-    </h1>
+    <header>
+        <h1><p>SNELL'S LAW</p></h1>
+        <h2><p> n<sub>1</sub>·Sen(&Theta;<sub>I</sub>) = n<sub>2</sub>·Sen(&Theta;<sub>R</sub>)</p></h2>
+    </header>
 
-    <div class="datos">
-        <p>
-            Which value do you want to obtain?
-            <select name="values" id="values">
-                <option value="n1" onclick="select();">n1</option>
-                <option value="tI" onclick="select();">&theta;I</option>
-                <option value="n2" onclick="select();">n2</option>
-                <option value="tR" onclick="select();">&theta;R</option>
-            </select>
-        </p>
-    </div>
+    <div class="body2">
+        <div class="reg">
+            <p>
+                Which value do you want to obtain?
+                <select name="values" id="values">
+                    <option value="none" disabled selected>Select value</option>
+                    <option value="n1" onclick="select();">n1</option>
+                    <option value="tI" onclick="select();">&theta;I</option>
+                    <option value="n2" onclick="select();">n2</option>
+                    <option value="tR" onclick="select();">&theta;R</option>
+                </select>
 
-    <div>
+                <input type="button" value="Calculate" onclick="calc();">
+                <input type="button" value="Clean" onclick="clean();">
+            </p>
 
+            <div class="data">
+                <p style="display: none;" id="pn1">n<sub>1</sub>: <input type="number" placeholder="0" value="0" id="n1" step="any"></p>
+                <p style="display: none;" id="ptI">&theta;<sub>I</sub>: <input type="number" placeholder="0" value="0" id="tI" step="any"> º</p>
+                <p style="display: none;" id="pn2">n<sub>2</sub>: <input type="number" placeholder="0" value="0" id="n2" step="any"></p>
+                <p style="display: none;" id="ptR">&theta;<sub>R</sub>: <input type="number" placeholder="0" value="0" id="tR" step="any"> º</p>
+
+                <img src="n1.png" alt="n1 image" id="imgn1" style="display: none;">
+                <img src="t1.png" alt="tI image" id="imgtI" style="display: none;">
+                <img src="n2.png" alt="n2 image" id="imgn2" style="display: none;">
+                <img src="tr.png" alt="tr image" id="imgtR" style="display: none;">
+            </div>
+
+            <div class="result">
+                <p style="display: none;" id="pn1r">n<sub>1</sub>: <input type="number" placeholder="0" value="0" id="n1r" step="any"></p>
+                <p style="display: none;" id="ptIr">&theta;<sub>I</sub>: <input type="number" placeholder="0" value="0" id="tIr" step="any"> º</p>
+                <p style="display: none;" id="pn2r">n<sub>2</sub>: <input type="number" placeholder="0" value="0" id="n2r" step="any"></p>
+                <p style="display: none;" id="ptRr">&theta;<sub>R</sub>: <input type="number" placeholder="0" value="0" id="tRr" step="any"> º</p>
+            </div>
+        </div>
     </div>
 
 </body>
