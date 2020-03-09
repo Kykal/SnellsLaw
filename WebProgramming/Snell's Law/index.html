@@ -24,16 +24,16 @@
         <div class="reg">
             <p>
                 Which value do you want to obtain?
-                <select name="values" id="values">
+                <select name="values" id="values" onclick="select();">
                     <option value="none" disabled selected>Select value</option>
-                    <option value="n1" onclick="select();">n1</option>
-                    <option value="tI" onclick="select();">&theta;I</option>
-                    <option value="n2" onclick="select();">n2</option>
-                    <option value="tR" onclick="select();">&theta;R</option>
+                    <option value="n1">n1</option>
+                    <option value="tI">&theta;I</option>
+                    <option value="n2">n2</option>
+                    <option value="tR">&theta;R</option>
                 </select>
 
-                <input type="button" value="Calculate" onclick="calc();">
-                <input type="button" value="Clean" onclick="clean();">
+                <button onclick="calc();">Calculate</button>
+                <button onclick="clean();">Clean</button>
             </p>
 
             <div class="data">
