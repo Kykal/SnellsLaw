@@ -21,6 +21,7 @@ body{
     font-family: Cambria;
 }
 
-footer {
+.container > .definitions{
     font-family: Arial;
+    text-align: center;
 }

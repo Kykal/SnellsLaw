@@ -21,54 +21,78 @@
         <h2><p> n<sub>1</sub>·Sen(&Theta;<sub>I</sub>) = n<sub>2</sub>·Sen(&Theta;<sub>R</sub>)</p></h2>
     </header>
 
-    <div class="body2">
-        <div class="reg">
-            <p>
-                Which value do you want to obtain?
-                <select name="values" id="values" onclick="select();">
-                    <option value="none" disabled selected>Select value</option>
-                    <option value="n1">n1</option>
-                    <option value="tI">&theta;I</option>
-                    <option value="n2">n2</option>
-                    <option value="tR">&theta;R</option>
-                </select>
+    <div class="container">
 
-                <button onclick="calc();" class="btn btn-success">Calculate</button>
-                <button onclick="clean();" class="btn btn-warning">Clean</button>
-            </p>
-
-            <div class="data">
-                <p style="display: none;" id="pn1">n<sub>1</sub>: <input type="number" placeholder="0" value="0" id="n1" step="any"></p>
-                <p style="display: none;" id="ptI">&theta;<sub>I</sub>: <input type="number" placeholder="0" value="0" id="tI" step="any"> º</p>
-                <p style="display: none;" id="pn2">n<sub>2</sub>: <input type="number" placeholder="0" value="0" id="n2" step="any"></p>
-                <p style="display: none;" id="ptR">&theta;<sub>R</sub>: <input type="number" placeholder="0" value="0" id="tR" step="any"> º</p>
-
-                <img src="n1.png" alt="n1 formula image" id="imgn1" style="display: none;" width="35%" height="35%">
-                <img src="t1.png" alt="tI formula image" id="imgtI" style="display: none;" width="35%" height="35%">
-                <img src="n2.png" alt="n2 formula image" id="imgn2" style="display: none;" width="35%" height="35%">
-                <img src="tr.png" alt="tr formula image" id="imgtR" style="display: none;" width="35%" height="35%">
-            </div>
-
-            <div class="result">
-                <p style="display: none;" id="pn1r">n<sub>1</sub>: <input type="number" placeholder="0" value="0" id="n1r" step="any"></p>
-                <p style="display: none;" id="ptIr">&theta;<sub>I</sub>: <input type="number" placeholder="0" value="0" id="tIr" step="any"> º</p>
-                <p style="display: none;" id="pn2r">n<sub>2</sub>: <input type="number" placeholder="0" value="0" id="n2r" step="any"></p>
-                <p style="display: none;" id="ptRr">&theta;<sub>R</sub>: <input type="number" placeholder="0" value="0" id="tRr" step="any"> º</p>
+        <div class="definitions">
+            <div class="row">
+                <div class="col-sm">
+                    <p>
+                        <b>n<sub>1</sub></b>
+                        <br>
+                        Refractive index from 1st object.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <p>
+                        <b>&theta;<sub>I</sub></b>
+                        <br>
+                        Angle of incidence.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <p>
+                        <b>n<sub>2</sub></b>
+                        <br>
+                        Refractive index from 2nd object.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <p>
+                        <b>&theta;<sub>R</sub></b>
+                        <br>
+                        Angle of refraction.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-     <footer>
-         <p>
-            <b>Encoded and embedded by:</b> Alan Xavier Benavides Benavides.
-            <br>
-            <b>University:</b> Universidad Autónoma de Nuevo León.
-            <br>
-            <b>School:</b> Facultad de Ingeniería Mecánica y Eléctrica.
-            <br>
-            <b>Location:</b> San Nicolás de Los Garza, Nuevo León, México, Planet 'Earth', Solar System, Solar Interstellar Neighborhood, Milky Way Galaxy, Local Galactic Group, Virgo Supercluster, Local Supercluster.
-         </p>
-     </footer>
+        <div class="body2">
+            <div class="reg">
+                <p>
+                    Which value do you want to obtain?
+                    <select name="values" id="values" onclick="select();">
+                        <option value="none" disabled selected>Select value</option>
+                        <option value="n1">n1</option>
+                        <option value="tI">&theta;I</option>
+                        <option value="n2">n2</option>
+                        <option value="tR">&theta;R</option>
+                    </select>
     
+                    <button onclick="calc();" class="btn btn-success">Calculate</button>
+                    <button onclick="clean();" class="btn btn-warning">Clean</button>
+                </p>
+    
+                <div class="data">
+                    <p style="display: none;" id="pn1">n<sub>1</sub>: <input type="number" placeholder="0" value="0" id="n1" step="any"></p>
+                    <p style="display: none;" id="ptI">&theta;<sub>I</sub>: <input type="number" placeholder="0" value="0" id="tI" step="any"> º</p>
+                    <p style="display: none;" id="pn2">n<sub>2</sub>: <input type="number" placeholder="0" value="0" id="n2" step="any"></p>
+                    <p style="display: none;" id="ptR">&theta;<sub>R</sub>: <input type="number" placeholder="0" value="0" id="tR" step="any"> º</p>
+    
+                    <img src="n1.png" alt="n1 formula image" id="imgn1" style="display: none;" width="35%" height="35%">
+                    <img src="t1.png" alt="tI formula image" id="imgtI" style="display: none;" width="40%" height="40%">
+                    <img src="n2.png" alt="n2 formula image" id="imgn2" style="display: none;" width="35%" height="35%">
+                    <img src="tr.png" alt="tr formula image" id="imgtR" style="display: none;" width="40%" height="40%">
+                </div>
+    
+                <div class="result">
+                    <p style="display: none;" id="pn1r">n<sub>1</sub>: <input type="number" placeholder="0" value="0" id="n1r" step="any"></p>
+                    <p style="display: none;" id="ptIr">&theta;<sub>I</sub>: <input type="number" placeholder="0" value="0" id="tIr" step="any"> º</p>
+                    <p style="display: none;" id="pn2r">n<sub>2</sub>: <input type="number" placeholder="0" value="0" id="n2r" step="any"></p>
+                    <p style="display: none;" id="ptRr">&theta;<sub>R</sub>: <input type="number" placeholder="0" value="0" id="tRr" step="any"> º</p>
+                </div>
+            </div>
+        </div>
+    <br>
+    </div>
 </body>
 </html>

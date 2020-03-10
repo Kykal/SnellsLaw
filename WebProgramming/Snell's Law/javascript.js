@@ -93,6 +93,10 @@ function calc(){
 
     if(document.getElementById('values').selectedIndex == 1){           //n1
 
+        if(tI == 0){
+            alert('Theta (I) can not be equal 0.')
+        }
+
         var DegR = tR*(Math.PI/180);
         var DegI = tI*(Math.PI/180); 
 
@@ -109,6 +113,10 @@ function calc(){
         document.getElementById('tIr').value = tIr;
 
     } else if(document.getElementById('values').selectedIndex == 3){    //n2
+
+        if(tI == 0){
+            alert('Theta (R) can not be equal 0.')
+        }
 
         var DegR = tR*(Math.PI/180);
         var DegI = tI*(Math.PI/180); 
